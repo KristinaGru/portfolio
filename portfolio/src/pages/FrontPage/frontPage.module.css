@@ -1,3 +1,47 @@
 .main {
   flex: 1;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.main > * {
+  width: 45vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info > * {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.dev {
+  font-weight: 400;
+  color: #ffc700;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.image {
+  position: relative;
+  max-height: 70vh;
+}
+
+.frame {
+  position: relative;
+  z-index: 2;
+}
+
+.photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  height: 350px;
 }

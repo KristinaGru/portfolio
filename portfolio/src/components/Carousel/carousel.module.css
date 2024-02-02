@@ -1,0 +1,49 @@
+.carouselContainer {
+  overflow: hidden;
+  position: relative;
+  height: 6rem;
+  width: 100%;
+  margin: 2rem;
+}
+
+.carouselCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-color: #e19a003a;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+  &:hover {
+    box-shadow: none;
+    margin: 5px 0 0 5px;
+  }
+  border-radius: 5%;
+}
+
+.carouselTrack {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  gap: 16px;
+  width: max-content;
+  white-space: nowrap;
+  animation: slide 35s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
