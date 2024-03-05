@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import style from './projectpage.module.css';
 import { useEffect } from 'react';
 import { setBackground } from '../../store';
+import { projects } from '../../projects';
+import ProjectDisplay from '../../components/Project/Project';
 
 export default function ProjectPage() {
   const backgroundColor = useSelector(
@@ -13,7 +15,9 @@ export default function ProjectPage() {
   }, []);
   return (
     <div style={{ backgroundColor }} className={style.main}>
-      ProjectPage
+      {projects.map((project) => (
+        <ProjectDisplay project={project} />
+      ))}
     </div>
   );
 }

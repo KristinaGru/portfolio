@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <ProjectPage />
+      },
+      {
+        path: 'contact',
+        element: <div>contact</div>
       }
     ]
   }

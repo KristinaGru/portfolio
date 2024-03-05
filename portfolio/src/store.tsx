@@ -7,7 +7,8 @@ const backgroundSlice = createSlice({
     setBackground: (state, action) => {
       const colors: Record<string, string> = {
         'FrontPage': '#ffc700',
-        'Projects': '#746BEB'
+        'Projects': '#7FBC8C',
+        'Contact': '#746BEB'
       };
       state.color = colors[action.payload];
     }
