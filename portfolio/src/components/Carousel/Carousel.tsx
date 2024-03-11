@@ -49,6 +49,11 @@ export default function Carousel() {
       link: 'https://www.mysql.com/'
     },
     {
+      img: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/influxdb/influxdb-original.svg',
+      alt: 'InfluxDB',
+      link: 'https://www.influxdata.com/'
+    },
+    {
       img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
       alt: 'docker',
       link: 'https://www.docker.com/'

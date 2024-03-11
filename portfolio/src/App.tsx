@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import FrontPage from './pages/FrontPage/FrontPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        element: <div>contact</div>
+        element: <ContactPage />
       }
     ]
   }

@@ -3,7 +3,7 @@ import style from './frontPage.module.css';
 import { useEffect } from 'react';
 import { setBackground } from '../../store';
 import frame from '../../assets/icons/frame.svg';
-import placeholder from '../../assets/images/transparent-cartoon-cat-cartoon-cat-with-headphones-uses-laptop-computer655f8cee19e661.5869343117007608141061.png';
+import image from '../../assets/images/DSC04969213.png';
 import Carousel from '../../components/Carousel/Carousel';
 
 export default function FrontPage() {
@@ -24,7 +24,7 @@ export default function FrontPage() {
       </div>
       <div className={style.image}>
         <img src={frame} className={style.frame} />
-        <img src={placeholder} className={style.photo} />
+        <img src={image} className={style.photo} />
       </div>
     </div>
   );
