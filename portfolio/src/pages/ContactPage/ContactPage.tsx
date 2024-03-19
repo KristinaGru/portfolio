@@ -93,6 +93,7 @@ export default function ContactPage() {
                 onChange={(e) => setMessage(e.target.value)}
                 multiline
                 rows={3}
+                required
               />
               <Button variant="contained" type="submit" className={style.btn}>
                 Send

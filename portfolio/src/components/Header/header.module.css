@@ -22,10 +22,30 @@
   margin-right: 1rem;
 }
 
-.menu > * {
+.menu > *,
+.link {
   color: #000;
   transition: transform 0.5s ease-in-out;
   &:hover {
     transform: skew(-15deg);
   }
+}
+
+.link {
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: 3px dotted #fff;
+}
+
+.curl {
+  margin: 1rem;
+  height: 5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
