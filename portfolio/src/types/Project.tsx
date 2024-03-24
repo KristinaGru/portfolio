@@ -4,5 +4,7 @@ export type Project = {
   about: string;
   tools: string[];
   link: string;
+  github: string;
   first?: boolean;
+  last?: boolean;
 };
