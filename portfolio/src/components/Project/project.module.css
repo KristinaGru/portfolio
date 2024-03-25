@@ -160,7 +160,44 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .projectWrapper {
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .anotherWrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .imgWrapper {
     margin: 0;
+    width: 100vw;
+    max-width: 600px;
+  }
+
+  .about,
+  .tools {
+    margin: 0;
+    height: 17rem;
+  }
+  .tools {
+    box-shadow: 5px 5px #f3ceb4;
+  }
+
+  .tools > img {
+    width: 5rem;
+  }
+
+  .toolsWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tools {
+    padding: 1rem;
   }
 }

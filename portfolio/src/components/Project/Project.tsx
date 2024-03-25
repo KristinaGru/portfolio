@@ -67,7 +67,11 @@ export default function ProjectDisplay({ project }: { project: Project }) {
             </IconButton>
           </div>
         </div>
-        {isDesktop ? projectElements : <div>{projectElements}</div>}
+        {isDesktop ? (
+          projectElements
+        ) : (
+          <div className={style.toolsWrap}>{projectElements}</div>
+        )}
       </div>
       <div className={style.buttons}>
         {!project.first ? (
