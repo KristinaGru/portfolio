@@ -1,27 +1,9 @@
 import { Project } from './types/Project';
 import mealGif from './assets/gifs/meal_sharing.gif';
 import adviceGif from './assets/gifs/advice_generator.gif';
+import projectManagementGif from './assets/gifs/project_management.gif';
 
 export const projects: Project[] = [
-  // {
-  //   gif: '',
-  //   title: 'PROJECT MANAGEMENT',
-  //   about:
-  //     'Dynamic project management application for individual and collaborative use. Users can create projects, define tasks, and seamlessly manage assignments between users, deadlines, priorities, and notes. The intuitive drag-and-drop UI enhances task status updates. Built in an agile environment with a 4-student team, ensuring efficiency in development and responsiveness to user needs.',
-  //   tools: [
-  //     'React.js',
-  //     'Typescript',
-  //     'Node.js',
-  //     'Express',
-  //     'PostgreSQL',
-  //     'Firebase Authentication',
-  //     'MUI',
-  //     'CSS modules'
-  //   ],
-  // link: 'https://lothbrok-webservice.onrender.com/',
-  // github: 'https://github.com/HackYourFuture-CPH/class-25-lothbrok',
-  // first: true
-  // },
   {
     gif: mealGif,
     title: 'MEAL SHARING',
@@ -31,6 +13,24 @@ export const projects: Project[] = [
     link: 'https://meal-sharing-rkfc.onrender.com/',
     github: 'https://github.com/KristinaGru/meal-sharing',
     first: true
+  },
+  {
+    gif: projectManagementGif,
+    title: 'PROJECT MANAGEMENT',
+    about:
+      'Dynamic project management application for individual and collaborative use. Users can create projects, define tasks, and seamlessly manage assignments between users, deadlines, priorities, and notes. The intuitive drag-and-drop UI enhances task status updates. Built in an agile environment with a 4-student team.',
+    tools: [
+      'React.js',
+      'Typescript',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Firebase Authentication',
+      'MUI',
+      'CSS modules'
+    ],
+    link: 'https://lothbrok-webservice.onrender.com/',
+    github: 'https://github.com/HackYourFuture-CPH/class-25-lothbrok'
   },
   {
     gif: adviceGif,

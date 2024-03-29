@@ -25,8 +25,11 @@ export default function ProjectDisplay({ project }: { project: Project }) {
       <div className={style.about}>{project.about}</div>
       <div className={style.tools}>
         <img src={stars} />
-        {project.tools.map((tool) => (
-          <span>{tool}</span>
+        {project.tools.map((tool, index) => (
+          <span>
+            {tool}
+            {project.tools.length === index + 1 ? null : ','}
+          </span>
         ))}
         <img src={spring} />
       </div>
@@ -35,13 +38,11 @@ export default function ProjectDisplay({ project }: { project: Project }) {
   return (
     <div className={projectWrapper}>
       <div className={style.anotherWrapper}>
-        {isDesktop ? (
-          <div className={style.titleBox}>
-            <img src={dottedLine} />
-            {project.title}
-            <img src={arrow} />
-          </div>
-        ) : null}
+        <div className={isDesktop ? style.titleBox : style.mobileTitle}>
+          <img src={dottedLine} />
+          {project.title}
+          {isDesktop ? <img src={arrow} /> : null}
+        </div>
         <div className={style.imgWrapper}>
           <img className={style.img} src={project.gif} />
           <div className={style.overlay}>

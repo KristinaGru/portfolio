@@ -92,14 +92,13 @@
 }
 
 .about {
-  min-width: 15rem;
   border: 4px solid #334b38;
   box-shadow: 5px 5px #334b38;
   padding: 2rem;
   margin-top: 15vw;
   background-color: white;
   text-align: justify;
-  max-width: 7rem;
+  max-width: 20rem;
   z-index: 1;
   margin-left: -2rem;
 }
@@ -114,6 +113,7 @@
   align-items: flex-end;
   margin-left: -4rem;
   color: #fff;
+  text-align: end;
 }
 
 .tools > img {
@@ -159,6 +159,16 @@
   }
 }
 
+.mobileTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
   .projectWrapper {
     align-items: flex-start;
@@ -179,7 +189,7 @@
   .about,
   .tools {
     margin: 0;
-    height: 17rem;
+    height: 19rem;
   }
   .tools {
     box-shadow: 5px 5px #f3ceb4;
