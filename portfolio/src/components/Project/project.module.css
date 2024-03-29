@@ -50,7 +50,7 @@
 }
 
 .imgWrapper {
-  margin-top: 10vw;
+  margin-top: 15vh;
   min-width: 20rem;
   max-width: 30rem;
   border: 4px solid #334b38;
@@ -95,7 +95,7 @@
   border: 4px solid #334b38;
   box-shadow: 5px 5px #334b38;
   padding: 2rem;
-  margin-top: 15vw;
+  margin-top: 30vh;
   background-color: white;
   text-align: justify;
   max-width: 20rem;
@@ -189,7 +189,7 @@
   .about,
   .tools {
     margin: 0;
-    height: 19rem;
+    height: 100%;
   }
   .tools {
     box-shadow: 5px 5px #f3ceb4;
@@ -203,6 +203,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    min-height: 17rem;
   }
 }
 
